@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon" />
+    <title>Projeto final</title>
+    <style>
+      @font-face {
+        font-family: "idroid";
+        src: url("idroid.otf") format("opentype");
+      }
+      header {
+        font-family: "Times New Roman", Times, serif;
+        text-align: center;
+        background-image: linear-gradient(to left, #37c576, #1f6d41);
+        margin: -21px;
+        color: whitesmoke;
+      }
+      nav {
+        box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.692);
+        text-align: center;
+        padding: 3px;
+        margin: 75px; /*a margin para o sombreado é fundamental*/
+      }
+
+      nav > a {
+        text-decoration: none;
+        font-weight: bold;
+        margin-right: 50px;
+        color: whitesmoke;
+      }
+      nav > a:hover {
+        text-decoration: underline; /*deixar sublinhado quando passar o mousse*/
+      }
+      .titulo {
+        font-family: "idroid";
+        color: #1a5c38;
+        text-align: center;
+      }
+      p {
+        font-family: Georgia, "Times New Roman", Times, serif;
+        text-align: justify;
+      }
+      .sub {
+        font-family: "idroid";
+        color: #1a5c38;
+        background-color: #1a5c3870;
+      }
+      footer {
+        background-color: #c5ebd6;
+      }
+      h3 {
+        font-family: Georgia, "Times New Roman", Times, serif;
+      }
+      iframe {
+        width: 390px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Curiosidades de Tecnologia</h1>
+      <h2>
+        Tudo aquilo que você sempre quis saber sobre o mundo Tech, em um único
+        lugar
+      </h2>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">Notícias</a>
+        <a href="#">Curiosidades</a>
+        <a href="#">Fale Conosco</a>
+      </nav>
+    </header>
+    <main>
+      <article>
+        <h1 class="titulo">História do Mascote do Android</h1>
+        <p>
+          Provavelmente você sabe que o sistema operacional Android, mantido
+          pelo Google é um dos mais utilizados para dispositivos móveis em todo
+          o mundo. Mas tavez você não saiba que o seu simpático mascote tem um
+          nome e uma história muito curiosa? Pois acompanhe esse artigo para
+          aprender muita coisa sobre esse robozinho.
+        </p>
+        <h2 class="sub">A primeira versão</h2>
+        <p>
+          A primeira tentativa de criar um mascote surgiu em 2007 e veio de um
+          desenvolvedor chamado Dan Morrill. Ele conta que abriu o Inkscape
+          (software livre para vetorização de imagens) e criou sua própria
+          versão de robô. O objetivo era apenas personificar o sistema apenas
+          para a a sua equipe, não existia nenhuma solicitação da empresa para a
+          criação de um mascote.
+        </p>
+        <picture>
+          <source
+            media="(max-width:700px )"
+            srcset="imagens/droids300px.png"
+            type="image/png"
+          />
+          <source
+            media="(max-width:1000px )"
+            srcset="imagens/droids700px.png"
+            type="image/png"
+          />
+          <img
+            src="imagens/droids1000ppx.png"
+            alt=""
+            srcset="imagens/droids1000ppx.png"
+          />
+        </picture>
+        <p>
+          Essa primeira versão bizarra até foi batizada em homenagem ao seu
+          criador: seriam os Dandroids.
+        </p>
+        <br />
+        <h2 class="sub">Surge um novo mascote</h2>
+        <p>
+          A ideia de ter um mascote foi amadurecendo e a missão foi passada para
+          uma profissional da área. A ilustradora Russa Irina Blok, também
+          funcionária do Google, ficou com a missão de representar o pequeno
+          robô de uma maneira mais agradável.
+        </p>
+        <br />
+        <picture>
+          <source
+            media="(max-width:700px )"
+            srcset="imagens/imagem300px.jpg"
+            type="image/jpg"
+          />
+          <source
+            media="(max-width:1000px )"
+            srcset="imagens/imagem700px.jpg"
+            type="image/jpg"
+          />
+          <img
+            src="imagens/imagem1000px.jpg"
+            alt=""
+            srcset="imagens/imagem1000px.jpg"
+          />
+        </picture>
+        <p>
+          A ideia principal da Irina era representar tudo graficamente com
+          poucos traços e de forma mais chapada. O desenho também deveria gerar
+          identificação rápida com quem o olha. Surgiu então o Bugdroid, o novo
+          mascote do Android.
+        </p>
+        <picture>
+          <source
+            media="(max-width:700px )"
+            srcset="imagens/bugdroid300px.png"
+            type="image/png"
+          />
+          <source
+            media="(max-width:1000px )"
+            srcset="imagens/bugdroid700px.png"
+            type="image/png"
+          />
+          <img
+            src="imagens/bugdroid1000px.png"
+            alt=""
+            srcset="imagens/bugdroid1000px.png"
+          />
+        </picture>
+        <p>
+          A principal inspiração para os traços do novo Bugdroid veio daqueles
+          bonequinhos que ilustram portas de banheiro para indicar o gênero de
+          cada porta. Conta a lenda que a artista estava criando em sua mesa no
+          escritório do Google e olhou para o lado dos banheiros e a
+          identificação foi imediata: simples, limpo, objetivo.
+        </p>
+      </article>
+      <br />
+      <br />
+    </main>
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/fY65W5yB5qc?si=jN7wSGT50lMqAPPU"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen
+    ></iframe>
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/RgtB84r4JWk?si=dBDVPIoWGs1QMkBG"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen
+    ></iframe>
+
+    <br />
+    <br />
+    <footer>
+      <h2 class="sub">[EXTRA] Quer aprender mais?</h2>
+      <p>
+        Outro assunto curioso em relação ao Android é que cada versão sempre foi
+        nomeada em homenagem a um doce, em ordem alfabética a partir da versão
+        1.5 até a 9.0.
+      </p>
+      <ul>
+        <li>1.5 - Cupcake</li>
+        <li>1.6 - Donut</li>
+        <li>1.8 - Ecaer</li>
+        <li>2.2 - Froyo</li>
+        <li>2.3 - Gingerbread</li>
+        <li>3.0 - Honeycomb</li>
+        <li>4.0 - Ice Cream Sandwich</li>
+        <li>4.1 - Jelly Bean</li>
+        <li>4.4 - KitKat</li>
+        <li>5.0 - Lolipop</li>
+        <li>6.0 - Marshmallow</li>
+        <li>7.0 - Nougat</li>
+        <li>8.0 - Oreo</li>
+        <li>9.0 - Pie</li>
+      </ul>
+    </footer>
+    <h3>
+      Então é isso! Espero que você tenha gostado do nosso artigo com essa
+      curiosidade sobre o sistema Android e seu simpático mascote. Site criado
+      por Gustavo Guanabara para o CursoemVideo
+    </h3>
+  </body>
+</html>
